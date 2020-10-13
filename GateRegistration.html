@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gate Registration Form</title>
+</head>
+<body style="border:5px solid black;padding:20px">
+	<div>
+		<h1 style="text-align:center;">Gate Registration Form</h1>
+		<p>Graduate Aptitude Test in Engineering (GATE) is a national examination conducted jointly by Indian Institute of Science (IISc) Bangalore and seven Indian Institutes of Technology (IITs) at Bombay, Delhi, Guwahati, Kanpur, Kharagpur, Madras and Roorkee on behalf of National Coordination Board (NCB)-GATE, Department of Higher Education, Ministry of Education (MoE), Government of India. GATE examination is a Computer Based Test (CBT).<br><br><b>Organising Institute for GATE 2021 is Indian Institute of Technology (IIT) Bombay.</b><br><br>Qualifying in GATE is a mandatory requirement for seeking admission and/or financial assistance to Postgraduate Programs (Master's and Doctoral) with Ministry of Education (MoE) and other Government Scholarships / Assistantships, subject to the admission criteria of the admitting institute.<br><br>The GATE score is also used by some Public Sector Undertakings (PSUs) for their recruitment and by several other universities in India and abroad for admissions.<br><br>GATE 2021 score will remain valid for <b>THREE YEARS</b> from the date of announcement of results.</p><hr>
+		<form action="https://www.google.com/" method="GET">
+			<fieldset>
+				<h3>STUDENT INFORMATION</h3>
+				<br>
+				<label>First Name:</label>
+				 <input type="text" id="First" name="firstName" required placeholder="John"><br><br>
+				<label>Last Name:</label>
+				<input type="text" id="Last" name="lastName" required placeholder="Wick"><br><br>
+				<label>
+					Father's Name :<input type="text" name="fatherName" required placeholder="">
+				</label><br><br>
+				<label>
+					Mother's Name :<input type="text" name="motherName" required placeholder="">
+				</label><br><br>
+				<label>Mobile No.:</label> 
+				<input type="text" name="country code"  value="+91" size="2"/>   
+				<input type="text" name="phone" size="10"/> <br> <br> 
+				<label>Email ID:</label>
+				<input type="email" id="email" name="email"/><br><br>
+				<label>ID Proof:</label>
+				<select>
+					<option value="Adhar Card" selected="Adhar Card">Adhar Card</option>
+					<option value="Birth Certificate">Birth Certificate</option>
+					<option value="License">License</option>
+					<option value="Pan Card">Pan Card</option>
+					<option value="12th Marklist">12th Marklist</option>
+					<option value="10th Marklist">10th Marklist</option>
+				</select>
+				<input type="file" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps"><br><br>
+				<label>Address:</label><br>
+				<textarea cols="50" rows="4" value="address" required></textarea><br><br>
+			</fieldset>
+			<fieldset>
+				<h3>EDUCATIONAL INFORMATION</h3><br>
+				<label>Qualification :</label>
+				<select required> 
+					<option value="-Select Course-" selected="Course">- Select Course -</option>  
+					<option value="B.Tech">B.Tech</option>  
+					<option value="BCA">BCA</option>  
+					<option value="BBA">BBA</option>  
+					<option value="MBA">MBA</option>
+				</select><br><br>
+				<label>Branch :</label>
+				<select required >
+					<option value="-Select Branch-" selected="Branch">- Select Branch -</option>
+					<option value="CV">Civil Engineering</option>
+					<option value="CSE">Computer Science and Engineering</option>
+					<option value="IT">Information Technology</option>
+					<option value="ELE">Electrical Engineering</option>
+					<option value="ET">Electronics Engineering</option>
+					<option value="MECH">Mechanical Engineering</option>
+				</select><br><br>
+				<label for="Uname">University Name:</label>
+				<input list="Uniname" id="Uname" name="Uname">
+				<datalist id="Uniname">
+					<option value="University of Pune,Pune">
+					<option value="Mumbai University,Mumbai">
+					<option value="Maharashtra State Board of Technical Education, Mumba">
+					<option value="Shivaji University, Kolhapur">
+					<option value="The Rashtrasant Tukadoji Maharaj Nagpur University, Nagpur">
+				</datalist>
+				<br><br>
+				<label for="clg-name">College Name:</label>
+				<input list="college name" id="clg-name" name="clg-name"> 
+				<datalist id="college name">
+					<option value="- Select College -">
+					<option value="Wilingdon College">
+					<option value="DR.J.J.MAGDUM POLYTECHNIC,JAYSINGPUR">
+					<option value="Walchand College of Engineering, Sangli">
+				</datalist><br><br>
+				<label>Exam Seat No :</label>
+				<input name="examSeatNo" size="20">
+			</fieldset>    
+			<fieldset>
+				<h3>Exam Preference</h3>
+				<label for="branch">GATE Exam Branch:</label>
+				<select list="paper" id="branch" name="branch">
+					<option value="CV">Civil Engineering</option>
+					<option value="CSE">Computer Science and Engineering</option>
+					<option value="IT">Information Technology</option>
+					<option value="ELE">Electrical Engineering</option>
+					<option value="ET">Electronics Engineering</option>
+					<option value="MECH">Mechanical Engineering</option>
+				</select><br><br>
+				<label for="city">City Preference 1 :</label>
+				<select id="city">
+					<optgroup label="Maharashtra">
+						<option value="Pune">Pune</option>
+						<option value="Mumbai">Mumbai</option>
+						<option value="Sangli">Sangli</option>
+					</optgroup>
+					<optgroup label="Madhya Pradesh">
+						<option value="b">Bhopal</option>
+						<option value="Gwalior">Gwalior</option>
+						<option value="Jabalpur">Jabalpur</option>
+					</optgroup>
+					<optgroup label="Gujarat">
+						<option value="rajkot">Rajkot</option>
+						<option value="ahmedabad">Ahmedabad</option>
+						<option value="Gandhinagar">Gandhinagar</option>
+					</optgroup>
+				</select><br><br>
+				<label for="city">City Preference 2 :</label>
+				<select id="city">
+					<optgroup label="Maharashtra">
+						<option value="Pune">Pune</option>
+						<option value="Mumbai">Mumbai</option>
+						<option value="Sangli">Sangli</option>
+					</optgroup>
+					<optgroup label="Madhya Pradesh">
+						<option value="b">Bhopal</option>
+						<option value="Gwalior">Gwalior</option>
+						<option value="Jabalpur">Jabalpur</option>
+					</optgroup>
+					<optgroup label="Gujarat">
+						<option value="rajkot">Rajkot</option>
+						<option value="ahmedabad">Ahmedabad</option>
+						<option value="Gandhinagar">Gandhinagar</option>
+					</optgroup>
+				</select><br><br>
+				<label for="city">City Preference 3 :</label>
+				<select id="city">
+					<optgroup label="Maharashtra">
+						<option value="Pune">Pune</option>
+						<option value="Mumbai">Mumbai</option>
+						<option value="Sangli">Sangli</option>
+					</optgroup>
+					<optgroup label="Madhya Pradesh">
+						<option value="b">Bhopal</option>
+						<option value="Gwalior">Gwalior</option>
+						<option value="Jabalpur">Jabalpur</option>
+					</optgroup>
+					<optgroup label="Gujarat">
+						<option value="rajkot">Rajkot</option>
+						<option value="ahmedabad">Ahmedabad</option>
+						<option value="Gandhinagar">Gandhinagar</option>
+					</optgroup>
+				</select><br><br>
+			</fieldset><br>
+			<button type="button" formaction="Reset" formmethod="post">Reset</button>
+			<button type="button" formaction="Submit" onclick='alert("Form Successfully Submitted")'>Submit</button>
+			
+			
+		</form>
+	</div>
+</body>
+</html>
